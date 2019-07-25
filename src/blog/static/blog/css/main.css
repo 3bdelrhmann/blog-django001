@@ -1,0 +1,7 @@
+@font-face{
+	font-family: 'Tajawal';
+	src:url('../fonts/Tajawal-Regular.ttf') ;
+}
+body{
+	font-family: 'Tajawal' !important;
+}
