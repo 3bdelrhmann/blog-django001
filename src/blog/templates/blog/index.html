@@ -1,18 +1,12 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="utf-8">	
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" type="text/css" href="{% static 'blog/css/bootstrap.min.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'blog/css/main.css' %}">
-</head>
-<body>
-	<div><i class="fas fa-language"></i>تجربة</div>
+{% extends 'blog/base.html' %}
 
-	<script type="text/javascript" src="{%  static 'blog/js/jquery-3.3.1.slim.min.js' %}"></script>
-	<script type="text/javascript" src="{%  static 'blog/js/popper.min.js' %}"></script>
-	<script type="text/javascript" src="{%  static 'blog/js/bootstrap.min.js' %}"></script>
-	<script type="text/javascript" src="{%  static 'blog/js/fontawesome-all.min.js' %}"></script>
-</body>
-</html>
+{% block content %}
+	{% for post in posts %}
+		<div class="border post p-3 mb-4">
+			<img class="img-fluid rounded-circle border m-2" width="70px" src="" alt='صورة الناشر'>
+			<span class="text-secondary">نشر في{{post.date}}</span>
+			<h3><a href="">{{ post.title }}</a></h3>
+			<p>{{post.content}}</p>
+		</div>
+	{% endfor %}
+{% endblock %}

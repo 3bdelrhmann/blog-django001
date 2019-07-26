@@ -2,6 +2,31 @@
 	font-family: 'Tajawal';
 	src:url('../fonts/Tajawal-Regular.ttf') ;
 }
+html,body{
+	text-align: right;
+	direction: rtl;
+}
 body{
 	font-family: 'Tajawal' !important;
 }
+.dropdown-menu .dropdown-item{
+	text-align: right;
+}
+.navbar .navbar-brand img,.card-body img{
+	width: 225px;
+}
+.navbar.bg-light{
+	background-color: #f5f5f5!important;
+}
+.bg-secondary{
+	background-color: #666!important;
+}
+.bg-light{
+	background-color: #ccc!important;
+}
+
+/* Start Post contend */
+.post{
+	
+}
+/* End Post contend */
