@@ -1,0 +1,7 @@
+<ul class="list-group p-3">
+	{% for post in posts %}
+		<a class="text-dark" href="{% url 'detail' post.pk %}">
+			<li class="list-group-item" >{{post.title}}</li>
+		</a>
+	{% endfor %}
+</ul>
